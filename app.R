@@ -1,8 +1,24 @@
+  # An R script to perform a stochastic epidemic simulation using an Agent Based model
+    # (with homogenous mixing equivalent to an SIR model)
+    #
+    # R script Author: Sherry Towers
+    # smtowers@asu.edu
+    # Created: Feb 13, 2016
 
+    # App developer: Rodrigo Díaz Lupanow
+    # programandoconro@gmail.com
+    # Created: March 13, 2019
 
-    library (shiny) #para abrir la librería
+    # Copyright Sherry Towers, 2016
 
-    ui <- fluidPage(              #para crear la pagina web en blanco
+    # This script is not guaranteed to be free of bugs and/or errors
+
+    # This script can be freely used and shared as long as the author and
+    # copyright information in this header remain intact.
+
+    library (shiny) 
+
+    ui <- fluidPage(           
 
     # Título de la app
     titlePanel(“Simulación de epidemias a partir de Modelos Basados en Agentes”),
@@ -54,34 +70,12 @@
     )
     )
     )
-    
-    
-    
-    
-    
 
     # Define el servidor para realizar la gráfica final
     server <- function(input, output) {
 
     #a continuación el script modificado
 
-    # An R script to perform a stochastic epidemic simulation using an Agent Based model
-    # (with homogenous mixing equivalent to an SIR model)
-    #
-    # R script Author: Sherry Towers
-    # smtowers@asu.edu
-    # Created: Feb 13, 2016
-
-    # App developer: Rodrigo Díaz Lupanow
-    # programandoconro@gmail.com
-    # Created: March 13, 2019
-
-    # Copyright Sherry Towers, 2016
-
-    # This script is not guaranteed to be free of bugs and/or errors
-
-    # This script can be freely used and shared as long as the author and
-    # copyright information in this header remain intact.
     SIR_agent = function(N # population size
     ,I_0 # initial number infected
     ,S_0 # initial number susceptible
