@@ -1,21 +1,28 @@
-  # An R script to perform a stochastic epidemic simulation using an Agent Based model
+###################################################################################################  
+# An R script to perform a stochastic epidemic simulation using an Agent Based model
     # (with homogenous mixing equivalent to an SIR model)
     #
     # R script Author: Sherry Towers
     # smtowers@asu.edu
     # Created: Feb 13, 2016
-
+    #
+    # Copyright Sherry Towers, 2016
+  
+####################################################################################################
+  # A Shiny App to easily change the parameters of the model and visualize the results in the Browser:
+    #
     # App developer: Rodrigo Díaz Lupanow
     # programandoconro@gmail.com
     # Created: March 13, 2019
-
-    # Copyright Sherry Towers, 2016
-
+    #
+    # Copyright Rodrigo Díaz-Lupanow, 2019
+####################################################################################################
+  
     # This script is not guaranteed to be free of bugs and/or errors
-
-    # This script can be freely used and shared as long as the author and
+    # This script can be freely used and shared as long as the authors and
     # copyright information in this header remain intact.
 
+#####################################################################################################
     library (shiny) 
 
     ui <- fluidPage(           
